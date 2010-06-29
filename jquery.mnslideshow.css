@@ -1,0 +1,19 @@
+#slideshow {
+    position: relative;
+    width: 580px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#slideshow ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+#slideshow ul li {
+    display: block;
+    position: absolute;
+    background: #fff;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="jquery.mnslideshow.css" type="text/css" media="screen" />
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://sendly.dev/js/jquery.easing.js"></script>
+
+    <script type="text/javascript" src="jquery.mnslideshow.js"></script>
+ 
+    <style type="text/css">
+    #slideshow {
+        border: 1px solid #333;
+    }
+    #slideshow ul li{
+        height: 200px;
+        width: 580px;
+        line-height: 200px;
+        text-align: center;
+    }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#slideshow').mnslideshow();
+    });
+    </script>
+  </head>
+    <body>
+    <div id="slideshow">
+      <ul>
+        <li style="background: #f00;">
+          Slide #1
+        </li>
+        <li style="background: #0f0;">
+          Slide #2
+        </li>
+        <li style="background: #00f;">
+          Slide #3
+        </li>
+      </ul>
+    </div>
+</body>
+</html>

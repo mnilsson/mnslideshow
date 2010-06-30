@@ -1,7 +1,5 @@
 #slideshow {
     position: relative;
-    width: 580px;
-    height: 200px;
     overflow: hidden;
 }
 
@@ -11,9 +9,9 @@
 	list-style:none;
 }
 
-
 #slideshow ul li {
     display: block;
     position: absolute;
-    background: #fff;
+    height: 100%;
+    width: 100%;
 }

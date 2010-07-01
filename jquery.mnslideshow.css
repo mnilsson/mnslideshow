@@ -1,0 +1,17 @@
+#slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+#slideshow ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#slideshow ul li {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

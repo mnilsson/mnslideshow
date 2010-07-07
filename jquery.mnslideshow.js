@@ -8,6 +8,7 @@
             options: {},
             optionsIn: {},
             optionsOut: {},
+            continuous: true,
             speed: 1000,
             pause: 2000
         };
@@ -43,7 +44,9 @@
                     function() {
                         thisSlide = nextSlide;
                         nextSlide++;
-                        if (slides.length <= nextSlide) {
+                        if(slides.length <= nextSlide && !options.continuous) {
+                            return;
+                        } else if (slides.length <= nextSlide) {
                             nextSlide = 0;
                         }
                         timeout = setTimeout(function() {

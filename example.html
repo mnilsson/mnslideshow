@@ -1,58 +1,47 @@
-<!doctype html>
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="jquery.mnslideshow.css" type="text/css" media="screen" />
-        <script type="text/javascript"
-                src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script type="text/javascript"
-                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="jquery.mnslideshow.js"></script>
+---
+layout: default
+example_head: true
+---
+<h2>Example 1</h2>
+<div id="slideshow1" class="mnslideshow">
+    <ul>
+        <li style="background: #f00;">
+            Slide #1
+        </li>
+        <li style="background: #0f0;">
+            Slide #2
+        </li>
+        <li style="background: #00f;">
+            Slide #3
+        </li>
+    </ul>
+</div>
+<pre>
+    $('#slideshow1').mnslideshow();
+</pre>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#slideshow').mnslideshow();
-            });
-        </script>
-        <style type="text/css">
-            #slideshow {
-                border: 1px solid #333;
-                width: 580px;
-                height: 200px;
-                background: #fff;
-                line-height: 200px;
-                text-align: center;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div id="slideshow">
-            <ul>
-                <li style="background: #f00;">
-                    Slide #1
-                </li>
-                <li style="background: #0f0;">
-                    Slide #2
-                </li>
-                <li style="background: #00f;">
-                    Slide #3
-                </li>
-            </ul>
-        </div>
-
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-7706492-2']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-        </script>
-    </body>
-</html>
+<h2>Example 2</h2>
+<div id="slideshow2" class="mnslideshow">
+    <ul>
+        <li style="background: #f00;">
+            Slide #1
+        </li>
+        <li style="background: #0f0;">
+            Slide #2
+        </li>
+        <li style="background: #00f;">
+            Slide #3
+        </li>
+    </ul>
+</div>
+<pre>
+    $('#slideshow2').mnslideshow({
+        'transition': 'slide',
+        'optionsIn': {
+            'direction' : 'right'
+        },
+        'optionsOut': {
+            'direction' : 'left'
+        },
+    });
+</pre>

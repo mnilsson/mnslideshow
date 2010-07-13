@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="jquery.mnslideshow.css" type="text/css" media="screen" />
+
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.mnslideshow.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#slideshow1').mnslideshow();
+        $('#slideshow2').mnslideshow({
+            'transition': 'slide',
+            'optionsIn': {
+                'direction' : 'right'
+            },
+            'optionsOut': {
+                'direction' : 'left'
+            },
+        });
+    });
+</script>

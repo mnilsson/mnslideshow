@@ -22,6 +22,9 @@
         var thisSlide = 0;
         var nextSlide = 1;
         var slides = $(this).find('li');
+        if ( slides.length < 2 ) {
+            return;
+        }
         $(slides).each(function() {
             $(this).css('display', 'none');
         });

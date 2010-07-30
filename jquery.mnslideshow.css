@@ -1,15 +1,15 @@
-#slideshow {
+.mnslideshow {
     position: relative;
     overflow: hidden;
 }
 
-#slideshow ul {
+.mnslideshow ul {
 	margin:0;
 	padding:0;
 	list-style:none;
 }
 
-#slideshow ul li {
+.mnslideshow ul li {
     display: block;
     position: absolute;
     height: 100%;

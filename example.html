@@ -1,44 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>mnilsson/mnslideshow @ GitHub</title>
+        <link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="jquery.mnslideshow.css" type="text/css" media="screen" />
-        <script type="text/javascript"
-                src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-        <script type="text/javascript"
-                src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="jquery.mnslideshow.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('#slideshow').mnslideshow();
-            });
-        </script>
-        <style type="text/css">
-            #slideshow {
-                border: 1px solid #333;
-                width: 580px;
-                height: 200px;
-                background: #fff;
-                line-height: 200px;
-                text-align: center;
-            }
-
-        </style>
+<script type="text/javascript">
+    $(function () {
+        $('#slideshow1').mnslideshow();
+        $('#slideshow2').mnslideshow({
+            'transition': 'slide',
+            'optionsIn': {
+                'direction' : 'right'
+            },
+            'optionsOut': {
+                'direction' : 'left'
+            },
+        });
+    });
+</script>
     </head>
     <body>
-        <div id="slideshow">
-            <ul>
-                <li style="background: #f00;">
-                    Slide #1
-                </li>
-                <li style="background: #0f0;">
-                    Slide #2
-                </li>
-                <li style="background: #00f;">
-                    Slide #3
-                </li>
-            </ul>
+        <div id="header">
+            <div id="header-content">
+                <h1><a href="http://mnilsson.github.com/mnslideshow">mnslideshow</a></h1>
+            </div>
         </div>
-    </body>
+        <div id="content">
+            <h2>Example 1</h2>
+<div id="slideshow1" class="mnslideshow">
+    <ul>
+        <li style="background: #f00;">
+            Slide #1
+        </li>
+        <li style="background: #0f0;">
+            Slide #2
+        </li>
+        <li style="background: #00f;">
+            Slide #3
+        </li>
+    </ul>
+</div>
+<pre>
+    $('#slideshow1').mnslideshow();
+</pre>
+
+<h2>Example 2</h2>
+<div id="slideshow2" class="mnslideshow">
+    <ul>
+        <li style="background: #f00;">
+            Slide #1
+        </li>
+        <li style="background: #0f0;">
+            Slide #2
+        </li>
+        <li style="background: #00f;">
+            Slide #3
+        </li>
+    </ul>
+</div>
+<pre>
+    $('#slideshow2').mnslideshow({
+        'transition': 'slide',
+        'optionsIn': {
+            'direction' : 'right'
+        },
+        'optionsOut': {
+            'direction' : 'left'
+        },
+    });
+</pre>
+        </div>
+    </body> 
 </html>

@@ -7,5 +7,5 @@ Requires jquery and jquery-ui.
 
 The slides can contain anything if it fits in an ul! 
 
-Check example.html for, wait for it, a example!
+Check example.html for examples!
     

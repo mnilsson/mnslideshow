@@ -21,6 +21,17 @@
                 'direction' : 'left'
             },
         });
+        $('#slideshow3').mnslideshow({
+            'pause' : '2000',
+            'continuous': false,
+            'transition': 'slide',
+            'optionsIn': {
+                'direction' : 'right'
+            },
+            'optionsOut': {
+                'direction' : 'left'
+            },
+        });
     });
 </script>
     </head>
@@ -74,6 +85,35 @@
         },
     });
 </pre>
+
+<h2>Example 3</h2>
+<div id="slideshow3" class="mnslideshow">
+    <ul>
+        <li style="background: #f00;">
+            Slide #1
+        </li>
+        <li style="background: #0f0;">
+            Slide #2
+        </li>
+        <li style="background: #00f;">
+            Slide #3
+        </li>
+    </ul>
+</div>
+<pre>
+    $('#slideshow3').mnslideshow({
+        'pause' : '2000',
+        'continuous': false,
+        'transition': 'slide',
+        'optionsIn': {
+            'direction' : 'right'
+        },
+        'optionsOut': {
+            'direction' : 'left'
+        },
+    });
+</pre>
+
         </div>
     </body> 
 </html>
